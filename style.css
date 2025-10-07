@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #003087;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+button {
+  background-color: #ffca28;
+  color: #003087;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffd54f;
+}
+
+
+/* Tabelas */
+table {
+  width: 90%;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Cards */
+.galeria {
+  display: flex; /* Muda para flexbox */
+  flex-direction: column; /* Alinha os itens em uma coluna vertical */
+  gap: 20px; /* Mantém o espaçamento entre os cards */
+  padding: 20px; /* Mantém o padding */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  align-items: center; /* Centraliza os cards verticalmente dentro do contêiner, opcional */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  width: 40%; /* Mantém o width ajustado por você */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.card p {
+  padding: 10px;
+  background-color: #ffca28;
+  color: #003087;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 80%; /* Ajusta para um tamanho maior em telas menores, se desejar */
+  }
+}
+
+
